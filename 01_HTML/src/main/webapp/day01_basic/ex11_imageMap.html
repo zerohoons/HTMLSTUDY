@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>이미지맵 ; 이미지안에 여러개 영역을 만들어서 링크로 연결</title>
+</head>
+<body>
+	<!-- 1. 해당 이미지에 usemap 속성부여 (map 태그에서 사용한 이름) -->
+	<a href="http://www.ictedu.co.kr">
+		<img alt="이미지맵" src="../images/workplace.jpg" usemap="#imgmap">
+	</a>
+	
+	<!-- 2. map 태그에 이름부여, area 태그 사용해서 영역지정 -->
+	<map name="imgmap">
+		<!-- 영역지정 : rect(사각형), circle(원), poly(다각형) -->
+		<!--  rect ": 시작x,y, 끝x,y -->
+		<area shape="rect"  coords="35,45,270,350" href="https://google.com">
+		<area shape="rect"  coords="290,170,335,248" href="ex01.html">
+		<!-- circle : 중심x,y,반지름 -->
+		<area shape="circle"  coords="340,300,50" href="ex10_image.html">
+	</map>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> rowspan 행합치기, colspan 열합치기</title>
+<style type="text/css">
+	table, th, td {
+		border: 2px solid green;
+		border-collapse: collapse;
+	}
+	table{
+		width: 800px;
+		margin: auto;
+	}
+	td{text-align: center;}
+</style>
+</head>
+<body>
+	<!-- thead,tbody,tfoot 사용하지 않으면 tbody에 사용것으로 사용 -->
+	<!-- rowspan="합치는갯수" (위,아래 합치기 => 위가 남는다.) -->
+	<!-- colspan="합치는갯수" (좌,우 합치기 => 좌가 남는다.) -->
+	<table>
+		<caption><h3> ICT 팬션 가격표 </h3></caption>
+		<tr><td>방이름</td><td>대상</td><td>크기</td><td>가격</td></tr>
+		<tr><td>유채방</td><td>여성</td><td>4인실</td><td>1인 20,000월</td></tr>
+		<tr><td>동백방</td><td>동성</td><td>4인실</td><td>1인 20,000월</td></tr>
+		<tr><td>동백방</td><td>가족</td><td>4인실</td><td>1인 20,000월</td></tr>
+		<tr><td>천혜향방</td><td>누구나</td><td>2인실</td><td>1인 20,000월</td></tr>
+	</table>
+	<hr>
+	<table>
+		<tr><td>방이름</td><td>대상</td><td>크기</td><td>가격</td></tr>
+		<tr><td>유채방</td><td>여성</td><td rowspan="3">4인실</td><td rowspan="4">1인 20,000월</td></tr>
+		<tr><td rowspan="2">동백방</td><td>동성</td></tr>
+		<tr><td>가족</td></tr>
+		<tr><td>천혜향방</td><td>누구나</td><td>2인실</td></tr>
+		<caption><h3> ICT 팬션 가격표 </h3></caption>
+	</table>
+	<hr>
+	
+	<table>
+		<caption><h3> colspan </h3></caption>
+		<tr><td colspan="2">1행1열</td><td>1행3열</td><td>1행4열</td><td>1행5열</td></tr>
+		<tr><td>2행1열</td><td>2행2열</td><td>2행3열</td><td rowspan="3" colspan="2">2행4열</td></tr>
+		<tr><td colspan="3">3행1열</td></tr>
+		<tr><td>4행1열</td><td>4행2열</td><td>4행3열</td></tr>
+	</table>
+	<hr>
+</body>
+</html>

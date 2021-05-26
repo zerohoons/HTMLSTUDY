@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	.city{
+	   background-color: tomato;
+	   color: white;
+	   border: 2px solid black;
+	   margin: 20px;
+	   padding: 20px;
+	   width: 300px;
+	   float: left;
+	}
+	/* flot 해제하기 : float 지정한 다음요소에 clear: both; (단점,margin-top 적용 불가)  */
+	#esc{
+		clear: both;
+		background-color: tomato;
+	    color: white;
+	    border: 2px solid black;
+	    margin: 20px;
+	    padding: 20px;
+	    width: 600px;
+	}
+	.note{ color: red; font-size: 120%;}
+</style>
+</head>
+<body>
+	<div class="city">
+		<h2>London</h2>
+		<p> London  is the capital of EngLand.</p>
+	</div>
+	<div class="city">
+		<h2>London</h2>
+		<p> London  is the capital of EngLand.</p>
+	</div>
+	<div class="city">
+		<h2>London</h2>
+		<p> London  is the capital of EngLand.</p>
+	</div>
+	<div id="esc">
+		<h2>London</h2>
+		<p> London  is the capital of EngLand.</p>
+	</div>
+	<hr>
+	
+	<h3>My <span class="note">Important</span> Heading</h3>
+    <p>This is some <span class="note">important</span> text.</p>
+	
+	
+</body>
+</html>

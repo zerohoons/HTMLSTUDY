@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>홀수열, 짝수열 구분</title>
+<style type="text/css">
+	table{width: 800px; margin: auto; text-align: center;}
+	table, th, td{ border: 1px solid black;}
+	#t1 tr:nth-child(even){ background-color: lightgray;}
+	#t2 tr:nth-child(odd){ background-color: hotpink;}
+	
+</style>	
+</head>
+<body>
+	<!--
+		tr:nth-child(even){} : 짝수열
+		tr:nth-child(odd){}  : 홀수열   
+		table 이 여러개 일때 table을 구분하기 위해서 id(선택자)를 사용한다.
+	  -->	
+	<table id="t1">
+		<caption><h3> ICT 팬션 가격표 </h3></caption>
+		<tr><td>방이름</td><td>대상</td><td>크기</td><td>가격</td></tr>
+		<tr><td>유채방</td><td>여성</td><td>4인실</td><td>1인 20,000월</td></tr>
+		<tr><td>동백방</td><td>동성</td><td>4인실</td><td>1인 20,000월</td></tr>
+		<tr><td>동백방</td><td>가족</td><td>4인실</td><td>1인 20,000월</td></tr>
+		<tr><td>천혜향방</td><td>누구나</td><td>2인실</td><td>1인 20,000월</td></tr>
+	</table>
+	<hr>
+	
+	<table id="t2">
+		<caption><h3> ICT 팬션 가격표 </h3></caption>
+		<tr><td>방이름</td><td>대상</td><td>크기</td><td>가격</td></tr>
+		<tr><td>유채방</td><td>여성</td><td>4인실</td><td>1인 20,000월</td></tr>
+		<tr><td>동백방</td><td>동성</td><td>4인실</td><td>1인 20,000월</td></tr>
+		<tr><td>동백방</td><td>가족</td><td>4인실</td><td>1인 20,000월</td></tr>
+		<tr><td>천혜향방</td><td>누구나</td><td>2인실</td><td>1인 20,000월</td></tr>
+	</table>
+</body>
+</html>

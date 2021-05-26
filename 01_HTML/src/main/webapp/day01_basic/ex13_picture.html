@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>picture 태그 : 넓이에 맞는 적합한 이미지 선택</title>
+</head>
+<body>
+	<picture>
+	   <!-- min-width : 최소 넓이( 장치 화면 이나 스크린 크기) -->
+	   <!-- 1000px 이상  -->
+	  <source media="(min-width: 1000px)" srcset="../images/pic_trulli.jpg">
+	  <!-- 600px ~ 1000px -->
+	  <source media="(min-width: 600px)" srcset="../images/img_chania.jpg">
+	  <!-- 599px이하 -->
+	  <img src="../images/img_girl.jpg">
+    </picture>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>javascript</title>
+</head>
+<body>
+<!-- 자바스크립트는 html 페이지를 보다 동적이고 대화식으로 만들어 줌 (기능)
+     <script>태그 사용, <head>, <body>에도 사용할 수 있다.
+     ** 태그 속성 중 onXXX()속성은 javascript의 function()를 호출한다.
+     
+     ** 자바스크립트에서 요소를 선택하는 방법
+     class 호출: document.getElementsByClassName("클래스명");
+     id 호출: document.getElementById("아이디명");
+     요소 호출 : document.getElementsByTagName("태그");    
+     
+     ** innerHTML: 해당 요소에 html를 가져오거나(get) 설정(set)할때 사용
+     변수 = innerHTML() ;    => get
+     innerHTML() = 데이터 ;  => set
+ -->
+ <!--  여기 Date()는 자바스크립트가 가지고 있는 내장 함수 -->
+ <button onclick="document.getElementById('d1').innerHTML = Date()"> 오늘날짜</button>
+ <h2 id="d1"></h2>
+ <hr>
+ 
+ <button onclick="today01()"> 오늘날짜2</button>
+ <h2 id="d2"></h2>
+ <script type="text/javascript">
+ 	function today01() {
+ 		document.getElementById('d2').innerHTML = Date()
+	}
+ </script>
+ <hr>
+ 
+ <script type="text/javascript">
+ 	function today02() {
+ 		document.getElementById('d3').innerHTML = Date()
+	}
+ </script>
+ <button onclick="today02()"> 오늘날짜3</button>
+ <h2 id="d3"></h2>
+ <hr>
+ 
+<!--  오류 발생 --> 
+ <script type="text/javascript">
+ 	document.getElementById('d4').innerHTML = Date()
+ </script>
+ <h2 id="d4"></h2>
+ <hr>
+ 
+ <!-- 오류발생 안함 -->
+ <h2 id="d5"></h2>
+ <script type="text/javascript">
+ 	document.getElementById('d5').innerHTML = Date()
+ </script>
+ <hr>
+</body>
+</html>
+
+
+
+
+
+
+
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>class 속성</title>
+<style type="text/css">
+	/* 요소 선택자 : 태그 선택자 : 해당 태그들만 선택 */
+	h2{ color: green;}
+	/* 아이디 선택자 : 요소 하나만 선택, 중복되면 안됨*/
+	#id_1{ background-color: red;}
+	/* 클래스 선택자 : 여러개 다양한 요소를 선택 */
+	.c_pink{color: pink;}
+</style>
+</head>
+<body>
+<!--
+    - 요소(태그) 선택자 : 해당 태그들을 선택해서 사용
+      
+    - class 속성 : html 요소(태그)를 클래스로 지정하는데 사용(선택자, selecter)
+                  여러개 html 요소(태그)를 동일한 클래스로 공유할 수 있다.
+                  ** 여러개의 요소(태그)를 선택해서 사용
+                  다양한 요소(서로다른태그)를 한번에 선택해서 사용(요소(태그) 선택자와 다른점) 
+                  자바스크립스트에서도 getElementByClassName()메소드를 이용해서 사용가능
+                  CSS, JQuery, Ajax에서 사용되는 선택자 중 하나이고, 이때 점(.)으로 표현한다.
+     
+    - id 속성 :  html 요소(태그)를 id로 지정하는데 사용(선택자, selecter)
+                ** 하나의 요소(태그)를 선택할 때 사용
+                CSS, JQuery, Ajax에서 사용되는 선택자 중 하나이고, 이때 샵(#)으로 표현한다.
+  -->
+  <h2> 한국 ICT 인재 개발원 </h2>
+  <h2 class="c_pink"> 한국 ICT 인재 개발원 </h2>
+  <h2 id="id_1"> 한국 ICT 인재 개발원 </h2>
+  <h2> 한국 ICT 인재 개발원 </h2>
+  <h2 class="c_pink"> 한국 ICT 인재 개발원 </h2>
+  <hr>
+  
+  <h3> 한국 ICT 인재 개발원</h3>
+  <h3 class="c_pink"> 한국 ICT 인재 개발원</h3>
+  <h3> 한국 ICT 인재 개발원</h3>
+  <h3 class="c_pink"> 한국 ICT 인재 개발원</h3>
+  <h3> 한국 ICT 인재 개발원</h3>
+</body>
+</html>
