@@ -96,11 +96,38 @@
 			               <option value="4">사파리</option> 
 			               <option value="5">IE</option>      
 			               <option value="6">크롬</option>      
-			           </select><br>          
-			           	   
-			<br><br>	   
+			           </select><br><br><br>
+			좋아하는 과일 :<input list ="list" name="fruit"> 
+						<datalist id = "list">
+						   <option >사과</option>      
+			               <option>포도</option>      
+			               <option>수박</option>      
+			               <option>딸기</option> 
+			               <option>배</option>      
+			               <option>귤</option>      
+
+						</datalist>                     
+			자기소개서 <br><br>
+			<textarea rows="5" cols="25" name="my">
+			
+			</textarea>
+			<br>
+			<!-- 파일 업로드 : 반드시 method는 "post" enctype=""을 지정해야한다.-->
+			파일 첨부 : <input type ="file" name=f_name> <br>
+			날짜 : <input type = "date" name="c_date">
+			시간 : <input type = "time" name="c_time"><br>
+			날짜&시간 : <input type = "datetime-local" name="c_datetime"><br>
+			컬러 : <input type = "color" name = "c_color">
+			범위 : <input type = "range" name = "c_range"><br>
+						<br><br>	   
      	    <!-- submit은 버튼 모양이고, value의 정보전달 버튼에 새겨지는 글자 -->
      	    <input type="submit" value="정보전달">
+     	    
+     	    <!-- submit 대신 자바스크립트를 호출하여 정보를 전달할 때 사용 -->
+     	    <input type="button" onclick="자바스크립트함수(this)" value="Button">
+     	    
+     	    <!-- 취소버튼 : form 안에 있는 모든 데이터를 초기화 -->
+     	    <input type="reset" value="다시하기">
      	</p>
      </form>
 </body>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>video & audio</title>
+</head>
+<body>
+<!-- 
+	속성 : width, height, colors, autoplay, muted(음소거)
+ -->
+  <video src="../media/video.mp4" controls></video>
+	<hr>
+	<!-- 크롬 브라우저의 경우, 자동실행을 위해 muted(음소거)를 넣어야한다. -->
+	
+ <video src="../media/video.mp4" autoplay muted></video>
+ <hr>
+ <video controls>
+ 	<source src="../media/video.mp4">
+ 	<!-- 위의 소스가 실행되지 않으면 아래 소스가 실행됨 -->
+ 	<source src="../media/video.ogg">
+ </video>
+ <hr>
+ 
+ <audio src="../media/all.mp3" controls></audio>
+ <hr>
+ <!-- 크롬 브라우저의 경우, 자동실행을 위해 muted(음소거)를 넣어야한다. -->
+ <audio src="../media/all.mp3" autoplay muted></audio>
+	
+ 
+ 
+</body>
+</html>
